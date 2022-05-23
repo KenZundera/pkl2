@@ -67,6 +67,10 @@
       thisForm.querySelector('.sent-message').classList.add('d-block');
       thisForm.querySelector('.error-message').classList.remove('d-block');
       thisForm.querySelector('.error-message').innerHTML = '';
+      thisForm.reset();
+      setTimeout(function() {
+        thisForm.querySelector('.sent-message').classList.remove('d-block');
+      }, 10000);
     })
 
     // nggak make yang dibawah ini soalnya jadi error dan gua belom ngerti
